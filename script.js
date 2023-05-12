@@ -19,6 +19,8 @@ function rot13(encodedStr){
 			decodedArr += String.fromCharCode(sciNum + 13);
 		}else if(sciNum>=78 && sciNum<=90){
 			decodedArr += String.fromCharCode(sciNum - 13);
+		}else{
+			decodedArr += encodedStr[i];
 		}
 	}
 
